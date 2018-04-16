@@ -14,7 +14,7 @@ Purpose: Navbar styles
 	font-size: 16px !important;
 	transition: 0.6s;
 	-webkit-transition: 0.6s; /*for safari*/
-	background-color: rgba(255,255,255,0.3);
+	background-color: rgba(242,242,242,0.3);
 }
 
 /*navbar list color - changed using js*/
@@ -27,7 +27,7 @@ Purpose: Navbar styles
 }
 
 .navbarStateWhenScrolled{
-	background-color: #ffffff;
+	background-color: #F2F2F2;
 	padding-top: 11px;
 	padding-bottom: 11px;
 	box-shadow: 0px 5px 10px rgba(0,0,0,0.1);

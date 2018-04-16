@@ -23,25 +23,25 @@ $(document).ready(function(){
 	function checkPosition(menuStatus){
 		var position = $(this).scrollTop();
 		var list = document.getElementsByClassName("nav-link-id");
+		var spanList = document.getElementsByClassName("nav-span-id");
 		if(position == 0){
 			if(!menuStatus){
 				$(".navbar").removeClass("navbarStateWhenScrolled");
-				document.getElementById("nav-header-id").style.color = "#ffffff";
-				for (var i = list.length - 1; i >= 0; i--) {
-					list[i].style.color = "#ffffff";
-				}
+				changeColor("#ffffff");
 			}else{
 				$(".navbar").addClass("navbarStateWhenScrolled");
-				document.getElementById("nav-header-id").style.color = "#01345B";
-				for (var i = list.length - 1; i >= 0; i--) {
-					list[i].style.color = "#01345B";
-				}
+				changeColor("#01345B");
 			}
 		}else{
 			$(".navbar").addClass("navbarStateWhenScrolled");
-			document.getElementById("nav-header-id").style.color = "#01345B";
-			for (var i = list.length - 1; i >= 0; i--) {
-				list[i].style.color = "#01345B";
+			changeColor("#01345B");
+		}
+
+		function changeColor(c){
+			for (var i = list.length - 1; i >= 0; i--) 
+				list[i].style.color = c;
+			for (var i = spanList.length - 1; i >= 0; i--) {
+				spanList[i].style.backgroundColor = c;
 			}
 		}
 	}
@@ -70,3 +70,10 @@ $(document).ready(function(){
         }
     });
 });
+
+function linkHash(l){
+	window.location.hash = l;
+	$('html, body').animate({
+		scrollTop: $(l).offset().top
+	}, 800);
+}

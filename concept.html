@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fitness For All — Concept</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/navbar.css">
+	<script src="scripts/scripts.js"></script>
+
+	<style type="text/css">
+	.nav-table{
+		width: 70%;
+		margin: auto;
+		padding-top: 50px;
+		margin-bottom: 50px;
+	}
+	.nav-table-row{
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+		margin-bottom: 10px;
+		border-spacing: 25px;
+		border-collapse: separate;
+	}
+	.nav-table-cell{
+		display: table-cell;
+		padding: 10px;
+		margin: 10px;
+	}
+	@media only screen and (max-width: 1100px){
+		.nav-table-cell{
+			display: block;
+			margin: 0px;
+		}
+	}
+	.card{
+		border-style: solid;
+		background-color: rgba(255,255,255,0.1);
+		margin: 10px;
+		padding: 10px;
+		transition: .2s;
+		-webkit-transition: .2s;
+	}
+	.card h3{
+		font-size: 25px;
+	}
+	.card p{
+		font-size: 15px;
+	}
+	.card:hover{
+		cursor: pointer;
+		background-color: rgba(255,255,255,0.3);
+		transition: .2s;
+		-webkit-transition: .2s;
+	}
+</style>
+
+</head>
+<body>
+
+	<!--nav bar-->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a type="button" class="navbar-toggle navbar-menu" data-toggle="collapse" data-target="#mainNav" id="navbarCollapseButton">
+					<span class="icon-bar nav-span-id"></span>
+					<span class="icon-bar nav-span-id"></span>
+					<span class="icon-bar nav-span-id"></span>
+				</a>
+				<a class="navbar-brand nav-link-id">FFA</a>
+			</div>
+			<div class="collapse navbar-collapse" id="mainNav">
+				<div class="nav navbar-nav navbar-right">
+					<li><a href="index.html" class="nav-link-id">Home</a></li>
+					<li><a href="concept.html" class="nav-link-id">Concept</a></li>
+					<li><a href="#" class="nav-link-id">Stats</a></li>
+					<li><a href="#" class="nav-link-id">About</a></li>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid section-home-wrap text-center">
+		<div class="section-home-wrap-text">
+			<h3><b>The Concept</b></h3>
+			<div class="nav-table">
+				<div class="nav-table-row">
+					<div class="nav-table-cell card" onclick="linkHash('#overview');">
+						<h3>Overview</h3>
+						<p>A description of the solution.</p>
+					</div>					
+					<div class="nav-table-cell card" onclick="linkHash('#feasibility');">
+						<h3>Feasibility</h3>
+						<p>Can the proposed solution even work?</p>
+					</div>
+					<div class="nav-table-cell card" onclick="linkHash('#savingscalculator');">
+						<h3>Savings Calculator</h3>
+						<p>Calculate how much you can save with The Concept.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid section-primary text-center" id="overview">
+		<h3>AN OVERVIEW</h3>
+	</div>
+
+	<div class="container-fluid section-secondary text-center" id="feasibility">
+		<h3>FEASIBILITY</h3>
+	</div>
+
+	<div class="container-fluid section-primary text-center" id="savingscalculator">
+		<h3>SAVINGS CALCULATOR</h3>
+		<div class="row">
+			<div class="col-sm">
+				
+			</div>
+			<div class="col-sm">
+				
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

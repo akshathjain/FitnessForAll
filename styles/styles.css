@@ -15,26 +15,45 @@ body{
 	margin: 0px;
 }
 
-.section-home{
-	background: url("../images/background.jpg");
+.section-home-full{
+	background: url("../images/background-home.jpg");
 	background-size: cover;
 	padding-top: 100px;
 	padding-bottom: 100px;
 	height: 100vh;
 }
 
-.section-home-text{
+.section-home-full-text{
 	color: #ffffff;
 	position: relative;
 	top: 40%;
 	transform: translateY(-40%);
 }
 
-.section-home-text h3{
+.section-home-full-text h3{
 	font-size: 50px;
 }
 
-.section-home-text p{
+.section-home-full-text p{
+	font-size: 25px;
+}
+
+.section-home-wrap{
+	background: url("../images/background-concept.jpg");
+	background-size: cover;
+	padding-top: 120px;
+	padding-bottom: 100px;
+}
+
+.section-home-wrap-text{
+	color: #ffffff;
+}
+
+.section-home-wrap-text h3{
+	font-size: 50px;
+}
+
+.section-home-wrap-text p{
 	font-size: 25px;
 }
 
@@ -45,7 +64,7 @@ body{
 }
 
 .section-secondary{
-	background-color: #363636;
+	background-color: #EFEFEF;
 	padding-top: 70px;
 	padding-bottom: 70px;
 }
@@ -70,20 +89,23 @@ body{
 	margin: 8px 0px 8px 0px;
 	border-radius: 8px;
 	border-style: solid;
-	border-color: #01345B;
+	border-width: 3px;
+	border-color: #ffffff;
 	transition: 0.1s;
 	-webkit-transition: 0.1s;
 }
 
 .btn-custom:hover{
-	background-color: #01345B;
+	background-color: #0592FF;
 	color: #ffffff;
+	border-color: #01345B;
 	text-decoration: none;
 	transition: 0.1s;
 	-webkit-transition: 0.1s;
 }
 
 .btn-dark-text{
+	border-color: #01345B;
 	color: #01345B;
 }
 
