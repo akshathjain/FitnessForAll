@@ -1,0 +1,54 @@
+/*
+Name: Akshath Jain
+Date: 4/16/18
+Purpose: Navbar styles
+*/
+
+/* navbar styles*/
+.navbar{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: 0;
+	border-radius: 0;
+	margin-bottom: 0;
+	font-size: 16px !important;
+	transition: 0.6s;
+	-webkit-transition: 0.6s; /*for safari*/
+	background-color: rgba(255,255,255,0.3);
+}
+
+/*navbar list color - changed using js*/
+.nav li a, .navbar-header a{
+	/*color: #ffffff !important;*/
+}
+
+.nav li a:hover{
+	color: #0592FF !important;
+}
+
+.navbarStateWhenScrolled{
+	background-color: #ffffff;
+	padding-top: 11px;
+	padding-bottom: 11px;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-menu{
+	background-color: rgba(255,255,255,0);
+	border: 0px;
+}
+
+.navbar-menu:hover{
+	background-color: rgba(255,255,255,0) !important;
+}
+
+/* hamburger menu */
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #ffffff;
+}
+
+/* scroll spy */
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+	color: #F0AD4E !important;
+	background-color: rgba(0,0,0,0);
+}
