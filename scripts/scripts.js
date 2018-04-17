@@ -72,8 +72,9 @@ $(document).ready(function(){
 });
 
 function linkHash(l){
-	window.location.hash = l;
 	$('html, body').animate({
 		scrollTop: $(l).offset().top
-	}, 800);
+	}, 800, function(){
+		window.location.hash = l;
+	});
 }
