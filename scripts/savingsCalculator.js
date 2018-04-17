@@ -28,9 +28,11 @@ function calculateSavings(){
 		var newCost = (monthlyCost - savings < 0) ? 0 : (monthlyCost - savings);
 		calculatorSavingsOutput.innerHTML = "$" + savings.toFixed(2);
 		calculatorCostOutput.innerHTML = "$" + newCost.toFixed(2);
+		document.getElementById('calculator-error-message').style.visibility = "hidden";
 	}else{
 		calculatorSavingsOutput.innerHTML = "$--.--";
 		calculatorCostOutput.innerHTML = "$--.--";
+		document.getElementById('calculator-error-message').style.visibility = "visible";
 	}
 
 	function isNumber(value, parentId){
