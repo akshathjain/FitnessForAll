@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="styles/styles.css">
 	<link rel="stylesheet" href="styles/navbar.css">
 	<script src="scripts/scripts.js"></script>
+	<script src="scripts/savingsCalculator.js"></script>
 
 	<style type="text/css">
 	.nav-table{
@@ -33,6 +34,7 @@
 		display: table-cell;
 		padding: 10px;
 		margin: 10px;
+		vertical-align: middle;
 	}
 	@media only screen and (max-width: 1100px){
 		.nav-table-cell{
@@ -42,6 +44,9 @@
 	}
 	.card{
 		border-style: solid;
+		border-width: 3px;
+		border-radius: 0px;
+		border-color: #ffffff;
 		background-color: rgba(255,255,255,0.1);
 		margin: 10px;
 		padding: 10px;
@@ -59,6 +64,38 @@
 		background-color: rgba(255,255,255,0.3);
 		transition: .2s;
 		-webkit-transition: .2s;
+	}
+
+	.calculator{
+		width: 60%;
+		padding-top: 50px;
+		margin: auto;
+	}
+	@media only screen and (max-width: 1100px){
+		.calculator{
+			width: 85%;
+		}
+		.top-margin-small-screen{
+			margin-top: 70px;
+		}
+	}
+	.calculator-output-label{
+		font-size: 14px;
+		color: #333;
+		font-weight: bold;
+		margin: 0;
+	}
+	.calculator-output-large{
+		color: #009938;
+		font-size: 50px;
+		font-weight: bold;
+		margin: 0;
+	}
+	.calculator-output-small{
+		color: #009938;
+		font-size: 30px;
+		font-weight: bold;
+		margin: 0;
 	}
 </style>
 
@@ -102,7 +139,7 @@
 					</div>
 					<div class="nav-table-cell card" onclick="linkHash('#savingscalculator');">
 						<h3>Savings Calculator</h3>
-						<p>Calculate how much you can save with The Concept.</p>
+						<p>Calculate potential savings.</p>
 					</div>
 				</div>
 			</div>
@@ -119,15 +156,57 @@
 
 	<div class="container-fluid section-primary text-center" id="savingscalculator">
 		<h3>SAVINGS CALCULATOR</h3>
-		<div class="row">
-			<div class="col-sm">
-				
+		<div class="row calculator">
+			<div class="col-sm-6" style="text-align: left;">
+				<label for="monthly-cost">Monthly Healthcare Cost</label>
+				<div class="input-group" id="monthly-cost-parent">
+					<span class="input-group-addon">$</span>
+					<input id="monthly-cost" type="text" class="form-control" placeholder="100">
+				</div>
+
+				<br>
+
+				<label for="average-daily-steps">Average Steps per Day</label>
+				<div class="input-group" id="average-daily-steps-parent">
+					<input id="average-daily-steps" type="text" class="form-control" placeholder="10000" aria-describedby="valid-discount">
+					<span class="input-group-addon">steps</span>
+				</div>
+
+				<br>
+
+				<label for="discount">Discount per 1000 steps</label>
+				<div class="input-group" id="discount-parent">
+					<span class="input-group-addon">$</span>
+					<input id="discount" type="text" class="form-control" placeholder="0.10"a>
+					<span class="input-group-addon">per 1000 steps</span>
+				</div>
+
+				<br>
+
+				<button class="btn btn-success" style="margin-top: 10px;" onclick="calculateSavings();"><b>CALCULATE</b></button>
+
 			</div>
-			<div class="col-sm">
+			<div class="col-sm-6 top-margin-small-screen">
+				<div class="well well-sm">
+					<p class="calculator-output-label">You could save:</p>
+					<p id="calculator-savings-output" class="calculator-output-large">$30.00</p>
+					<p class="calculator-output-label">Every month</p>	
+				</div>
+
+				<div class="well well-sm">
+					<p class="calculator-output-label">Your new healthcare cost could be:</p>
+					<p id="calculator-cost-output" class="calculator-output-small">$70.00</p>
+					<p class="calculator-output-label">Every month</p>
+				</div>
 				
 			</div>
 		</div>
 	</div>
 
+	<!-- footer -->
+	<footer class="container-fluid section-footer">
+
+		<p>©2018 Akshath Jain. All rights reserved. Designed and developed by Akshath Jain.</p>
+	</footer>
 </body>
 </html>
