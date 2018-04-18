@@ -93,6 +93,7 @@ body{
 	border-color: #ffffff;
 	transition: 0.1s;
 	-webkit-transition: 0.1s;
+	user-select: none;
 }
 
 .btn-custom:hover{
