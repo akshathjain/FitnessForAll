@@ -14,7 +14,7 @@ Purpose: Navbar styles
 	font-size: 16px !important;
 	transition: 0.6s;
 	-webkit-transition: 0.6s; /*for safari*/
-	background-color: rgba(242,242,242,0.3);
+	background-color: rgba(242,242,242,0.5);
 }
 
 /*navbar list color - changed using js*/
@@ -49,6 +49,8 @@ Purpose: Navbar styles
 
 /* scroll spy */
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
-	color: #F0AD4E !important;
+	color: #0592FF !important;
 	background-color: rgba(0,0,0,0);
+	border-bottom-width: 3px;
+	border-style: none none solid none;
 }

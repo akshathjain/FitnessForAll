@@ -16,6 +16,66 @@
 	<link rel="stylesheet" href="styles/navbar.css">
 	<script src="scripts/scripts.js"></script>
 
+	<style type="text/css">
+	.info-cell{
+		padding-top: 40px;
+		padding-bottom: 220px;
+	}
+	.info-cell-left{
+		padding-right: 100px;
+	}
+	.info-cell-right{
+		padding-left: 100px;
+	}
+	.info-cell-last{
+		padding-bottom: 40px;
+	}
+	.info-image{
+		height: 300px;
+	}
+	.info-divider{
+		width: 10px;
+		background-color: #02548E !important;
+		padding-right: 0px;
+		padding-left: 0px;
+		text-align: center;
+	}
+	.info-divider-dot{
+		width: 34px;
+		height: 34px;
+		background-color: #02548E;
+		border-radius: 50%;
+		display: inline-block;
+		margin-left: -12px;
+	}
+	.table{
+		width: 80%;
+		margin: auto;
+	}
+	.table-row{
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+		border-collapse: separate;
+	}
+	.table-cell{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	@media only screen and (max-width: 1100px){
+		.table-cell{
+			display: block;
+			margin: 0px;
+		}
+		.info-divider{
+			visibility: hidden;
+		}
+		.info-cell{
+			padding-bottom: 70px;
+		}
+	}	
+</style>
+
 </head>
 <body>
 
@@ -32,7 +92,7 @@
 			</div>
 			<div class="collapse navbar-collapse" id="mainNav">
 				<div class="nav navbar-nav navbar-right">
-					<li><a href="index.html" class="nav-link-id">Home</a></li>
+					<li class="active"><a href="index.html" class="nav-link-id">Home</a></li>
 					<li><a href="concept.html" class="nav-link-id">Concept</a></li>
 					<li><a href="#" class="nav-link-id">Stats</a></li>
 					<li><a href="#" class="nav-link-id">About</a></li>
@@ -50,45 +110,59 @@
 	</div>
 
 	<div class="container-fluid section-primary" id="info">
-		<div class="row" style="width: 70%; margin: auto; margin-top: 50px;">
-			<div class="col-sm-6">
-				<img src="images/graph.svg" class="img-scalable" style="height: 300px;" />
+		<div class="table">
+			<div class="table-row" style="margin-top: 50px;">
+				<div class="table-cell info-cell info-cell-left">
+					<img src="images/graph.svg" class="img-scalable info-image" />
+				</div>
+				
+				<div class="table-cell info-divider info-cell"><span class="info-divider-dot"></span></div>
+
+				<div class="table-cell info-cell info-cell-right">
+					<h3>Obesity in the United States</h3>
+					<p>Obesity in the US has been rapidly rising in the US. In fact, levels have risen so high in the past few years that the United States is now the most obese developed nations.</p>
+					<a class="btn-custom btn-dark-text"><b>MORE STATS</b></a>
+				</div>
 			</div>
-			<div class="col-sm-6">
-				<h3>Obesity in the United States</h3>
-				<p>Obesity in the US has been rapidly rising in the US. In fact, levels have risen so high in the past few years that the United States is now the most obese developed nations.</p>
-				<a class="btn-custom btn-dark-text"><b>MORE STATS</b></a>
+			<div class="table-row">
+				<div class="table-cell info-cell info-cell-left">
+					<h3>Heart Disease in the United States</h3>
+					<p>Obesity in the US has been rapidly rising in the US. In fact, levels have risen so high in the past few years that the United States is now the most obese developed nations.</p>
+					<a class="btn-custom btn-dark-text"><b>MORE STATS</b></a>
+				</div>
+
+				<div class="table-cell info-divider info-cell"><span class="info-divider-dot"></span></div>
+
+				<div class="table-cell info-cell info-cell-right">
+					<img src="images/heart.svg" class="img-scalable info-image" />
+				</div>
 			</div>
-		</div>
-		<div class="row" style="width: 70%; margin: auto; margin-top: 200px;">
-			<div class="col-sm-6">
-				<h3>Heart Disease in the United States</h3>
-				<p>Obesity in the US has been rapidly rising in the US. In fact, levels have risen so high in the past few years that the United States is now the most obese developed nations.</p>
-				<a class="btn-custom btn-dark-text"><b>MORE STATS</b></a>
+			<div class="table-row">
+				<div class="table-cell text-center info-cell info-cell-left">
+					<img src="images/heartbeat.svg" class="img-scalable info-image">
+				</div>
+
+				<div class="table-cell info-divider info-cell"><span class="info-divider-dot"></span></div>
+
+				<div class="table-cell info-cell info-cell-right">
+					<h3>Exercise</h3>
+					<p>One of the most efficient ways to prevent obesity is to exercise. However, there's an alarming trend in which less and less Americans are getting adequte exercise on a daily, or even weekly, basis. In fact, several NIH studies have determined a causal link between a lack of exercise and heart disease in the US. As a result, the number cause of preventable death in the United States is heart disease.</p>
+					<a class="btn-custom btn-dark-text"><b>MORE STATS</b></a>
+				</div>
 			</div>
-			<div class="col-sm-6">
-				<img src="images/heart.svg" class="img-scalable" style="height: 300px;" />
-			</div>
-		</div>
-		<div class="row" style="width: 70%; margin: auto; margin-top: 200px;">
-			<div class="col-sm-6 text-center">
-				<img src="images/heartbeat.svg" class="img-scalable" style="height: 300px;">
-			</div>
-			<div class="col-sm-6">
-				<h3>Exercise</h3>
-				<p>One of the most efficient ways to prevent obesity is to exercise. However, there's an alarming trend in which less and less Americans are getting adequte exercise on a daily, or even weekly, basis. In fact, several NIH studies have determined a causal link between a lack of exercise and heart disease in the US. As a result, the number cause of preventable death in the United States is heart disease.</p>
-				<a class="btn-custom btn-dark-text"><b>MORE STATS</b></a>
-			</div>
-		</div>
-		<div class="row" style="width: 70%; margin: auto; margin-top: 200px;">
-			<div class="col-sm-6">
-				<h3>There is a solution</h3>
-				<p>One of the most efficient ways to prevent obesity is to exercise. However, there's an alarming trend in which less and less Americans are getting adequte exercise on a daily, or even weekly, basis. In fact, several NIH studies have determined a causal link between a lack of exercise and heart disease in the US. As a result, the number cause of preventable death in the United States is heart disease.</p>
-				<a class="btn-custom btn-dark-text"><b>MORE STATS</b></a>
-			</div>
-			<div class="col-sm-6 text-center">
-				<img src="images/lightbulb.svg" class="img-scalable" style="height: 350px;">
-			</div>
+			<div class="table-row">
+				<div class="table-cell info-cell info-cell-last info-cell-left">
+					<h3>There is a solution</h3>
+					<p>One of the most efficient ways to prevent obesity is to exercise. However, there's an alarming trend in which less and less Americans are getting adequte exercise on a daily, or even weekly, basis. In fact, several NIH studies have determined a causal link between a lack of exercise and heart disease in the US. As a result, the number cause of preventable death in the United States is heart disease.</p>
+					<a class="btn-custom btn-dark-text" href="concept.html"><b>THE CONCEPT</b></a>
+				</div>
+
+				<div class="table-cell info-divider info-cell info-cell-last"><span class="info-divider-dot"></span></div>
+
+				<div class="table-cell text-center info-cell info-cell-last info-cell-left">
+					<img src="images/lightbulb.svg" class="img-scalable info-image">
+				</div>
+			</div>	
 		</div>
 	</div>
 
