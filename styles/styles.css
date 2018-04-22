@@ -39,7 +39,6 @@ body{
 }
 
 .section-home-wrap{
-	background: url("../images/background-concept.jpg");
 	background-size: cover;
 	padding-top: 120px;
 	padding-bottom: 100px;
@@ -94,6 +93,7 @@ body{
 	transition: 0.1s;
 	-webkit-transition: 0.1s;
 	user-select: none;
+	text-decoration: none;
 }
 
 .btn-custom:hover{
@@ -103,6 +103,10 @@ body{
 	text-decoration: none;
 	transition: 0.1s;
 	-webkit-transition: 0.1s;
+}
+
+a.btn-custom:visited{
+	color: inherit;
 }
 
 .btn-dark-text{

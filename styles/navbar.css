@@ -49,7 +49,7 @@ Purpose: Navbar styles
 
 /* scroll spy */
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
-	color: #0592FF !important;
+	color: #02548E !important;
 	background-color: rgba(0,0,0,0);
 	border-bottom-width: 3px;
 	border-style: none none solid none;

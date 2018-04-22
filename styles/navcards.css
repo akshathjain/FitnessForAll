@@ -1,0 +1,49 @@
+.nav-table{
+	width: 70%;
+	margin: auto;
+	padding-top: 50px;
+	margin-bottom: 50px;
+}
+.nav-table-row{
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	margin-bottom: 10px;
+	border-spacing: 25px;
+	border-collapse: separate;
+}
+.nav-table-cell{
+	display: table-cell;
+	padding: 10px;
+	margin: 10px;
+	vertical-align: middle;
+}
+@media only screen and (max-width: 1100px){
+	.nav-table-cell{
+		display: block;
+		margin: 0px;
+	}
+}
+.card{
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 0px;
+	border-color: #ffffff;
+	background-color: rgba(255,255,255,0.1);
+	margin: 10px;
+	padding: 10px;
+	transition: .2s;
+	-webkit-transition: .2s;
+}
+.card h3{
+	font-size: 25px;
+}
+.card p{
+	font-size: 15px;
+}
+.card:hover{
+	cursor: pointer;
+	background-color: rgba(255,255,255,0.3);
+	transition: .2s;
+	-webkit-transition: .2s;
+}
