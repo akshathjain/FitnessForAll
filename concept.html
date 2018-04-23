@@ -55,11 +55,50 @@
 		margin: auto;
 		margin-top: 100px;
 	}
+	.info-row{
+		padding-bottom: 120px;
+	}
 	.info-image{
 		height: 300px;
 	}
 	.info-description{
 		text-align: left;
+	}
+	.faq{
+		text-align: left;
+		width: 65%;
+		margin: auto;
+		margin-top: 40px;
+	}
+	@media only screen and (max-width: 1100px){
+		.faq{
+			width: 95%;
+		}
+	}
+	.nav-tabs > li, .nav-pills > li {
+		float:none;
+		display:inline-block;
+		*display:inline; /* ie7 fix */
+		zoom:1; /* hasLayout ie7 trigger */
+		margin-bottom: 20px;
+	}
+
+	.nav-tabs, .nav-pills {
+		text-align:center;
+	}
+
+	.nav-pills > .active > a, .nav-pills > .active > a:hover{
+		background-color: #01345B !important;
+		color: #ffffff !important;
+		transition: .2s;
+		-webkit-transition: .2s;
+	}
+
+	.nav-pills > li > a:focus, .nav-pills > li > a:hover {
+		background-color: #0592FF;
+		color: #ffffff !important;
+		transition: .2s;
+		-webkit-transition: .2s;
 	}
 </style>
 
@@ -97,9 +136,9 @@
 						<h3>Overview</h3>
 						<p>A description of the solution.</p>
 					</div>					
-					<div class="nav-table-cell card" onclick="linkHash('#feasibility');">
-						<h3>Feasibility</h3>
-						<p>Can the proposed solution even work?</p>
+					<div class="nav-table-cell card" onclick="linkHash('#feasibilityfaq');">
+						<h3>Feasibility / FAQ</h3>
+						<p>Could the proposed solution even work?</p>
 					</div>
 					<div class="nav-table-cell card" onclick="linkHash('#savingscalculator');">
 						<h3>Savings Calculator</h3>
@@ -112,21 +151,174 @@
 
 	<div class="container-fluid section-primary text-center" id="overview">
 		<h3>AN OVERVIEW</h3>
+		
 		<div class="info-table">
-			<div class="row">
+			<div class="row info-row">
 				<div class="col-sm-6">
-					<img class="info-image" src="images/smartwatch.svg">
+					<img class="img-scalable info-image" src="images/smartwatch.svg">
 				</div>
 				<div class="col-sm-6 info-description">
-					<h3>The Solution</h3>
+					<h3>Healthcare Discounts Based on Fitness</h3>
 					<p>The solution is simple: offer healthcare discounts based on how much you walk everyday.</p>
+				</div>
+			</div>
+			<div class="row info-row">
+				<div class="col-sm-6 info-description">
+					<h3>Money Motivates</h3>
+					<p>Don't believe us? That's ok. Believe the research.</p>
+				</div>
+				<div class="col-sm-6">
+					<img class="img-scalable info-image" src="images/dollarsign.svg">
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="container-fluid section-secondary text-center" id="feasibility">
-		<h3>FEASIBILITY</h3>
+	<div class="container-fluid section-secondary text-center" id="feasibilityfaq">
+		<h3>FEASIBILITY / FAQ</h3>
+
+		<div class="faq">
+			<ul class="nav nav-pills">
+				<li class="active"><a data-toggle="pill" href="#section1">Section 1</a></li>
+				<li><a data-toggle="pill" href="#section2">Section 2</a></li>
+				<li><a data-toggle="pill" href="#section3">Section 3</a></li>
+			</ul>
+
+			<div class="tab-content">
+				<div id="section1" class="tab-pane fade in active">
+					<div class="row">
+						<div class="col-sm-4">
+							<h3>Q1</h3>
+							<p>Answer</p>
+						</div>
+						<div class="col-sm-4">
+							<h3>Q2</h3>
+							<p>Answer</p>
+						</div>
+						<div class="col-sm-4">
+							<h3>Q3</h3>
+							<p>Answer</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4">
+							<h3>Q4</h3>
+							<p>Answer</p>
+						</div>
+						<div class="col-sm-4">
+							<h3>Q5</h3>
+							<p>Answer</p>
+						</div>
+						<div class="col-sm-4">
+							<h3>Q6</h3>
+							<p>Answer</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4">
+							<h3>Q7</h3>
+							<p>Answer</p>
+						</div>
+						<div class="col-sm-4">
+							<h3>Q8</h3>
+							<p>Answer</p>
+						</div>
+						<div class="col-sm-4">
+							<h3>Q9</h3>
+							<p>Answer</p>
+						</div>
+					</div>
+				</div>
+				<div id="section2" class="tab-pane fade">
+					<div class="row">
+						<div class="col-sm-4">
+							<h3>Q1</h3>
+							<p>Answer</p>
+						</div>
+						<div class="col-sm-4">
+							<h3>Q2</h3>
+							<p>Answer</p>
+						</div>
+						<div class="col-sm-4">
+							<h3>Q3</h3>
+							<p>Answer</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4">
+							<h3>Q4</h3>
+							<p>Answer</p>
+						</div>
+						<div class="col-sm-4">
+							<h3>Q5</h3>
+							<p>Answer</p>
+						</div>
+						<div class="col-sm-4">
+							<h3>Q6</h3>
+							<p>Answer</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4">
+							<h3>Q7</h3>
+							<p>Answer</p>
+						</div>
+						<div class="col-sm-4">
+							<h3>Q8</h3>
+							<p>Answer</p>
+						</div>
+						<div class="col-sm-4">
+							<h3>Q9</h3>
+							<p>Answer</p>
+						</div>
+					</div>
+				</div>
+				<div id="section3" class="tab-pane fade">
+					<div class="row">
+						<div class="col-sm-4">
+							<h3>Q1</h3>
+							<p>Answer</p>
+						</div>
+						<div class="col-sm-4">
+							<h3>Q2</h3>
+							<p>Answer</p>
+						</div>
+						<div class="col-sm-4">
+							<h3>Q3</h3>
+							<p>Answer</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4">
+							<h3>Q4</h3>
+							<p>Answer</p>
+						</div>
+						<div class="col-sm-4">
+							<h3>Q5</h3>
+							<p>Answer</p>
+						</div>
+						<div class="col-sm-4">
+							<h3>Q6</h3>
+							<p>Answer</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4">
+							<h3>Q7</h3>
+							<p>Answer</p>
+						</div>
+						<div class="col-sm-4">
+							<h3>Q8</h3>
+							<p>Answer</p>
+						</div>
+						<div class="col-sm-4">
+							<h3>Q9</h3>
+							<p>Answer</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class="container-fluid section-primary text-center" id="savingscalculator">

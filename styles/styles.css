@@ -40,7 +40,7 @@ body{
 
 .section-home-wrap{
 	background-size: cover;
-	padding-top: 120px;
+	padding-top: 170px;
 	padding-bottom: 100px;
 }
 
@@ -115,7 +115,7 @@ a.btn-custom:visited{
 }
 
 .btn-dark-text:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 }
 
 .img-scalable{

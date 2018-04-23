@@ -14,12 +14,12 @@ Purpose: Navbar styles
 	font-size: 16px !important;
 	transition: 0.6s;
 	-webkit-transition: 0.6s; /*for safari*/
-	background-color: rgba(242,242,242,0.5);
+	background-color: rgba(242,242,242,0.7);
 }
 
 /*navbar list color - changed using js*/
 .nav li a, .navbar-header a{
-	/*color: #ffffff !important;*/
+	color: #01345B !important;
 }
 
 .nav li a:hover{
@@ -44,7 +44,7 @@ Purpose: Navbar styles
 
 /* hamburger menu */
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: #ffffff;
+	background-color: #01345B;
 }
 
 /* scroll spy */

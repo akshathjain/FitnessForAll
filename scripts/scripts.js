@@ -27,27 +27,16 @@ $(document).ready(function(){
 		if(position == 0){
 			if(!menuStatus){
 				$(".navbar").removeClass("navbarStateWhenScrolled");
-				changeColor("#ffffff");
 			}else{
 				$(".navbar").addClass("navbarStateWhenScrolled");
-				changeColor("#01345B");
 			}
 		}else{
 			$(".navbar").addClass("navbarStateWhenScrolled");
-			changeColor("#01345B");
-		}
-
-		function changeColor(c){
-			for (var i = list.length - 1; i >= 0; i--) 
-				list[i].style.color = c;
-			for (var i = spanList.length - 1; i >= 0; i--) {
-				spanList[i].style.backgroundColor = c;
-			}
 		}
 	}
 
 	// Add smooth scrolling to all links
-	$("a").on('click', function(event) {
+	$("a:not([data-toggle])").on('click', function(event) {
 
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
