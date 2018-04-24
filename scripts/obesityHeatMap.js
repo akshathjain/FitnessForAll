@@ -5,6 +5,18 @@ Purpose: styles and heat map function for obesity map
 */
 
 $(document).ready(function(){
+	var obesityData;
+
+	//get obesity data
+	$.getJSON("https://akshathjain.com/FitnessForAll/assets/obesityRates.json", function(data){
+		obesityData = data;
+
+		obesityData.sort(function(a,b){
+			return a.y2016 - b.y2016;
+		});
+
+		console.log(obesityData);
+	});
 	
 	//add styles to the map
 	$("#obesity-heat-map").usmap({
