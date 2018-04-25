@@ -72,7 +72,7 @@ $(document).ready(function(){
 				}
 			}
 
-			label.innerHTML = "<b>" + state.state + "</b><br>" + state.y2016 + " death per 100,000";
+			label.innerHTML = "<b>" + state.state + "</b><br>" + state.y2016 + " deaths per 100,000";
 		});
 		//mouse has left
 		$("#heartdisease-heat-map").on("usmapmouseout", function(event, data){

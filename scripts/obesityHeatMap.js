@@ -76,7 +76,7 @@ $(document).ready(function(){
 		});
 		//mouse has left
 		$("#obesity-heat-map").on("usmapmouseout", function(event, data){
-			document.getElementById('obesity-state-label').innerHTML = '<b>United States</b><br>34.3%';
+			document.getElementById('obesity-state-label').innerHTML = '<b>United States</b><br>36.5%';
 		});
 
 	});

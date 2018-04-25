@@ -25,7 +25,24 @@
 	.map-row{
 		width: 65%;
 		margin: auto;
-		display: table;
+	}
+	.big-info-row{
+		width: 80%;
+		padding-top: 10px;
+		padding-bottom: 100px;
+		margin: auto;
+	}
+	.big-info-number{
+		font-size: 75px;
+	}
+	.orange{
+		color: #E55700
+	}
+	.red{
+		color: #930002
+	}
+	.big-info-description{
+		font-size: 18px;
 	}
 	</style>
 
@@ -79,6 +96,21 @@
 	<div class="container-fluid section-primary text-center" id="obesity">
 		<h3>OBESITY</h3>
 		<br><br>
+		<div class="row big-info-row">
+			<div class="col-sm-4">
+				<p class="big-info-number orange">36.5%</p>
+				<p class="big-info-description">of adults are obese in the US.</p>
+			</div>
+			<div class="col-sm-4">
+				<p class="big-info-number orange">$147 bn</p>
+				<p class="big-info-description"> in total medical costs.</p>
+			</div>
+			<div class="col-sm-4">
+				<p class="big-info-number orange">12th</p>
+				<p class="big-info-description">most obese nation in the world.</p>
+			</div>
+		</div>
+
 		<h4><b>2016 Obesity Rates in the United States</b></h4>
 		<div class="row map-row">
 			<div class="col-sm-10">
@@ -86,7 +118,7 @@
 			</div>
 			<div class="col-sm-2">
 				<div class="well">
-					<div id="obesity-state-label"><b>United States</b><br>34.3%</div>	
+					<div id="obesity-state-label"><b>United States</b><br>36.5%</div>	
 				</div>
 			</div>
 		</div>
@@ -95,6 +127,25 @@
 	<div class="container-fluid section-secondary text-center" id="heartdisease">
 		<h3>HEART DISEASE</h3>
 		<br><br>
+		<div class="row big-info-row">
+			<div class="col-sm-3">
+				<p class="big-info-number red">#1</p>
+				<p class="big-info-description">cause of death in the US.</p>
+			</div>
+			<div class="col-sm-3">
+				<p class="big-info-number red">$320 bn</p>
+				<p class="big-info-description"> in total medical costs.</p>
+			</div>
+			<div class="col-sm-3">
+				<p class="big-info-number red">25%</p>
+				<p class="big-info-description">of all deaths in the US</p>
+			</div>
+			<div class="col-sm-3">
+				<p class="big-info-number red">735k</p>
+				<p class="big-info-description">heart attacks per year. That's one every 43 seconds.</p>
+			</div>
+		</div>
+
 		<h4><b>2016 Heart Disease Death Rates in the United States</b></h4>
 		<div class="row map-row">
 			<div class="col-sm-10">
