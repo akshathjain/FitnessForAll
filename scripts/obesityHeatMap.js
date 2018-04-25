@@ -29,7 +29,6 @@ $(document).ready(function(){
 		var stateStyles = new Object();
 		var min = obesityData[0].y2016; //this is the lowest number
 		var max = obesityData[obesityData.length - 1].y2016; //scale the highest number - lowest up to 1
-		console.log(min, max);
 		for(var i = obesityData.length - 1; i >= 0; i--){
 			var fillColor = new Object();
 
@@ -37,8 +36,6 @@ $(document).ready(function(){
 			var rc = Math.pow((r1 - r0) / (max - min) * (obesityData[i].y2016 - max) + r1, powIncrease);
 			var gc = Math.pow((g1 - g0) / (max - min) * (obesityData[i].y2016 - max) + g1, powIncrease);
 			var bc = Math.pow((b1 - b0) / (max - min) * (obesityData[i].y2016 - max) + b1, powIncrease);
-
-			console.log(rc, gc, bc);
 
 			fillColor['fill'] = "rgb(" + rc + "," + gc + "," + bc + ")";
 			stateStyles[obesityData[i].abbreviation] = fillColor;
@@ -54,7 +51,8 @@ $(document).ready(function(){
 			},
 			//define hover styles
 			stateHoverStyles:{
-				fill: "rgb(178, 86, 0)"
+				stroke: "#843f00",
+				"stroke-width":3
 			},
 			stateHoverAnimation: 100,
 			showLabels: false,
