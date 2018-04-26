@@ -65,6 +65,19 @@
 	.info-description{
 		text-align: left;
 	}
+	@media only screen and (max-width: 1100px){
+		.info-row{
+			margin-bottom: 40px;
+		}
+		.info-row.reverse{
+			display: flex;
+			flex-direction: column-reverse;
+		}
+		.info-image{
+			padding-bottom: 20px;
+		}
+	}
+
 	.faq{
 		text-align: left;
 		width: 65%;
@@ -167,7 +180,7 @@
 					<p>The solution is simple: offer healthcare discounts based on how much you walk everyday.</p>
 				</div>
 			</div>
-			<div class="row info-row">
+			<div class="row info-row reverse">
 				<div class="col-sm-6 info-description">
 					<h3>Money Motivates</h3>
 					<p>Don't believe us? That's ok. Believe the research.</p>
