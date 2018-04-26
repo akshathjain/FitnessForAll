@@ -1,0 +1,302 @@
+[
+ {
+   "state": "Alaska",
+   "abbreviation": "AL",
+   "y2013": 0.158,
+   "y2016": 0.152
+ },
+ {
+   "state": "Alabama",
+   "abbreviation": "AK",
+   "y2013": 0.178,
+   "y2016": 0.101
+ },
+ {
+   "state": "Arizona",
+   "abbreviation": "AZ",
+   "y2013": 0.212,
+   "y2016": 0.14
+ },
+ {
+   "state": "Arkansas",
+   "abbreviation": "AR",
+   "y2013": 0.178,
+   "y2016": 0.091
+ },
+ {
+   "state": "California",
+   "abbreviation": "CA",
+   "y2013": 0.164,
+   "y2016": 0.087
+ },
+ {
+   "state": "Colorado",
+   "abbreviation": "CO",
+   "y2013": 0.138,
+   "y2016": 0.108
+ },
+ {
+   "state": "Connecticut",
+   "abbreviation": "CT",
+   "y2013": 0.118,
+   "y2016": 0.072
+ },
+ {
+   "state": "Delaware",
+   "abbreviation": "DE",
+   "y2013": 0.083,
+   "y2016": 0.106
+ },
+ {
+   "state": "Florida",
+   "abbreviation": "FL",
+   "y2013": 0.22,
+   "y2016": 0.146
+ },
+ {
+   "state": "Georgia",
+   "abbreviation": "GA",
+   "y2013": 0.185,
+   "y2016": 0.137
+ },
+ {
+   "state": "Hawaii",
+   "abbreviation": "HI",
+   "y2013": 0.057,
+   "y2016": 0.063
+ },
+ {
+   "state": "Idaho",
+   "abbreviation": "ID",
+   "y2013": 0.168,
+   "y2016": 0.102
+ },
+ {
+   "state": "Illinois",
+   "abbreviation": "IL",
+   "y2013": 0.119,
+   "y2016": 0.086
+ },
+ {
+   "state": "Indiana",
+   "abbreviation": "IN",
+   "y2013": 0.146,
+   "y2016": 0.076
+ },
+ {
+   "state": "Iowa",
+   "abbreviation": "IA",
+   "y2013": 0.095,
+   "y2016": 0.062
+ },
+ {
+   "state": "Kansas",
+   "abbreviation": "KS",
+   "y2013": 0.115,
+   "y2016": 0.098
+ },
+ {
+   "state": "Kentucky",
+   "abbreviation": "KY",
+   "y2013": 0.163,
+   "y2016": 0.072
+ },
+ {
+   "state": "Louisiana",
+   "abbreviation": "LA",
+   "y2013": 0.164,
+   "y2016": 0.121
+ },
+ {
+   "state": "Maine",
+   "abbreviation": "ME",
+   "y2013": 0.113,
+   "y2016": 0.087
+ },
+ {
+   "state": "Maryland",
+   "abbreviation": "MD",
+   "y2013": 0.133,
+   "y2016": 0.072
+ },
+ {
+   "state": "Massachusetts",
+   "abbreviation": "MA",
+   "y2013": 0.036,
+   "y2016": 0.064
+ },
+ {
+   "state": "Michigan",
+   "abbreviation": "MI",
+   "y2013": 0.121,
+   "y2016": 0.074
+ },
+ {
+   "state": "Minnesota",
+   "abbreviation": "MN",
+   "y2013": 0.079,
+   "y2016": 0.069
+ },
+ {
+   "state": "Mississippi",
+   "abbreviation": "MS",
+   "y2013": 0.164,
+   "y2016": 0.139
+ },
+ {
+   "state": "Missouri",
+   "abbreviation": "MO",
+   "y2013": 0.131,
+   "y2016": 0.098
+ },
+ {
+   "state": "Montana",
+   "abbreviation": "MT",
+   "y2013": 0.19,
+   "y2016": 0.085
+ },
+ {
+   "state": "Nebraska",
+   "abbreviation": "NE",
+   "y2013": 0.106,
+   "y2016": 0.082
+ },
+ {
+   "state": "Nevada",
+   "abbreviation": "NV",
+   "y2013": 0.22,
+   "y2016": 0.102
+ },
+ {
+   "state": "New Hampshire",
+   "abbreviation": "NH",
+   "y2013": 0.132,
+   "y2016": 0.076
+ },
+ {
+   "state": "New Jersey",
+   "abbreviation": "NJ",
+   "y2013": 0.134,
+   "y2016": 0.09
+ },
+ {
+   "state": "New Mexico",
+   "abbreviation": "NM",
+   "y2013": 0.195,
+   "y2016": 0.13
+ },
+ {
+   "state": "New York",
+   "abbreviation": "NY",
+   "y2013": 0.111,
+   "y2016": 0.066
+ },
+ {
+   "state": "North Carolina",
+   "abbreviation": "NC",
+   "y2013": 0.173,
+   "y2016": 0.124
+ },
+ {
+   "state": "North Dakota",
+   "abbreviation": "ND",
+   "y2013": 0.121,
+   "y2016": 0.089
+ },
+ {
+   "state": "Ohio",
+   "abbreviation": "OH",
+   "y2013": 0.139,
+   "y2016": 0.065
+ },
+ {
+   "state": "Oklahoma",
+   "abbreviation": "OK",
+   "y2013": 0.181,
+   "y2016": 0.124
+ },
+ {
+   "state": "Oregon",
+   "abbreviation": "OR",
+   "y2013": 0.142,
+   "y2016": 0.062
+ },
+ {
+   "state": "Pennsylvania",
+   "abbreviation": "PA",
+   "y2013": 0.116,
+   "y2016": 0.057
+ },
+ {
+   "state": "Rhode Island",
+   "abbreviation": "RI",
+   "y2013": 0.107,
+   "y2016": 0.058
+ },
+ {
+   "state": "South Carolina",
+   "abbreviation": "SC",
+   "y2013": 0.189,
+   "y2016": 0.108
+ },
+ {
+   "state": "South Dakota",
+   "abbreviation": "SD",
+   "y2013": 0.116,
+   "y2016": 0.094
+ },
+ {
+   "state": "Tennessee",
+   "abbreviation": "TN",
+   "y2013": 0.152,
+   "y2016": 0.132
+ },
+ {
+   "state": "Texas",
+   "abbreviation": "TX",
+   "y2013": 0.228,
+   "y2016": 0.171
+ },
+ {
+   "state": "Utah",
+   "abbreviation": "UT",
+   "y2013": 0.137,
+   "y2016": 0.135
+ },
+ {
+   "state": "Vermont",
+   "abbreviation": "VT",
+   "y2013": 0.091,
+   "y2016": 0.065
+ },
+ {
+   "state": "Virginia",
+   "abbreviation": "VA",
+   "y2013": 0.131,
+   "y2016": 0.115
+ },
+ {
+   "state": "Washington",
+   "abbreviation": "WA",
+   "y2013": 0.134,
+   "y2016": 0.081
+ },
+ {
+   "state": "West Virginia",
+   "abbreviation": "WV",
+   "y2013": 0.142,
+   "y2016": 0.088
+ },
+ {
+   "state": "Wisconsin",
+   "abbreviation": "WI",
+   "y2013": 0.104,
+   "y2016": 0.083
+ },
+ {
+   "state": "Wyoming",
+   "abbreviation": "WY",
+   "y2013": 0.175,
+   "y2016": 0.112
+ }
+]
