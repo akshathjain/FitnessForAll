@@ -41,43 +41,7 @@ $(document).ready(function(){
 			stateStyles[heartdiseaseData[i].abbreviation] = fillColor;
 		}
 
-		//add styles to the map
-		$("#heartdisease-heat-map").usmap({
-			//define map styles
-			stateStyles:{
-				fill: "#1abc9c",
-				stroke:'#ffffff',
-				"stroke-width": 1
-			},
-			//define hover styles
-			stateHoverStyles:{
-				stroke: "#800000",
-				"stroke-width":3
-			},
-			stateHoverAnimation: 100,
-			showLabels: false,
-			stateSpecificStyles:stateStyles
-		});
-
-		//define mouseover functionality
-		$("#heartdisease-heat-map").on("usmapmouseover", function(event, data){
-			var label = document.getElementById('heartdisease-state-label')
-			label.style.visibility = 'visible';
-
-			var state;
-			for(var i = 0; i < heartdiseaseData.length; i++){
-				if(heartdiseaseData[i].abbreviation == data.name){
-					state = heartdiseaseData[i];
-					break;
-				}
-			}
-
-			label.innerHTML = "<b>" + state.state + "</b><br>" + state.y2016 + " deaths per 100,000";
-		});
-		//mouse has left
-		$("#heartdisease-heat-map").on("usmapmouseout", function(event, data){
-			document.getElementById('heartdisease-state-label').innerHTML = '<b>United States</b><br>165.5 deaths per 100,000';
-		});
+		
 
 		//calculate map size once map loaded
 		calculateMapSize("heartdisease-heat-map-container", "heartdisease-heat-map");
