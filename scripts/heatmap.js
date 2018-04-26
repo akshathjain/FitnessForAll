@@ -26,23 +26,35 @@ $(document).ready(function(){
 
 		//define mouseover functionality
 		$("#obesity-heat-map").on("usmapmouseover", function(event, stateName){
-			var label = document.getElementById('obesity-state-label')
-			label.style.visibility = 'visible';
+			var legend = document.getElementById('obesity-state-legend');
+			var legendName = legend.getElementsByTagName('p')[0];
+			var legendPercent = legend.getElementsByTagName('p')[2];
+			var legendRank = legend.getElementsByTagName('p')[4];
 
-			var state;
+			var state, rank
 			for(var i = 0; i < data.length; i++){
 				if(data[i].abbreviation == stateName.name){
 					state = data[i];
+					rank = 50 - i;
 					break;
 				}
 			}
 
-			label.innerHTML = "<b>" + state.state + "</b><br>" + (state.y2016 * 100).toFixed(1) + "%";
+			legendName.innerHTML = state.state;
+			legendPercent.innerHTML = (state.y2016 * 100).toFixed(1) + "%";
+			legendRank.innerHTML = "#" + rank;
 		});
 
 		//mouse has left
 		$("#obesity-heat-map").on("usmapmouseout", function(event, data){
-			document.getElementById('obesity-state-label').innerHTML = '<b>United States</b><br>36.5%';
+			var legend = document.getElementById('obesity-state-legend');
+			var legendName = legend.getElementsByTagName('p')[0];
+			var legendPercent = legend.getElementsByTagName('p')[2];
+			var legendRank = legend.getElementsByTagName('p')[4];
+
+			legendName.innerHTML = "United States";
+			legendPercent.innerHTML = "34.6%";
+			legendRank.innerHTML = "#12 (global)";
 		});
 	});
 
@@ -67,23 +79,35 @@ $(document).ready(function(){
 
 		//define mouseover functionality
 		$("#heartdisease-heat-map").on("usmapmouseover", function(event, stateName){
-			var label = document.getElementById('heartdisease-state-label')
-			label.style.visibility = 'visible';
+			var legend = document.getElementById('heartdisease-state-legend');
+			var legendName = legend.getElementsByTagName('p')[0];
+			var legendRate = legend.getElementsByTagName('p')[2];
+			var legendRank = legend.getElementsByTagName('p')[4];
 
-			var state;
+			var state, rank;
 			for(var i = 0; i < data.length; i++){
 				if(data[i].abbreviation == stateName.name){
 					state = data[i];
+					rank = 50 - i;
 					break;
 				}
 			}
 
-			label.innerHTML = "<b>" + state.state + "</b><br>" + state.y2016 + " deaths per 100,000";
+			legendName.innerHTML = state.state;
+			legendRate.innerHTML = state.y2016;
+			legendRank.innerHTML = "#" + rank;
 		});
 
 		//mouse has left
 		$("#heartdisease-heat-map").on("usmapmouseout", function(event, data){
-			document.getElementById('heartdisease-state-label').innerHTML = '<b>United States</b><br>165.5 deaths per 100,000';
+			var legend = document.getElementById('heartdisease-state-legend');
+			var legendName = legend.getElementsByTagName('p')[0];
+			var legendRate = legend.getElementsByTagName('p')[2];
+			var legendRank = legend.getElementsByTagName('p')[4];
+
+			legendName.innerHTML = "United States";
+			legendRate.innerHTML = "165.5";
+			legendRank.innerHTML = "#4 (global)";
 		});
 	});
 
@@ -108,23 +132,35 @@ $(document).ready(function(){
 
 		//define mouseover functionality
 		$("#uninsured-heat-map").on("usmapmouseover", function(event, stateName){
-			var label = document.getElementById('uninsured-state-label')
-			label.style.visibility = 'visible';
+			var legend = document.getElementById('uninsured-state-legend');
+			var legendName = legend.getElementsByTagName('p')[0];
+			var legendRate = legend.getElementsByTagName('p')[2];
+			var legendRank = legend.getElementsByTagName('p')[4];
 
-			var state;
+			var state, rank;
 			for(var i = 0; i < data.length; i++){
 				if(data[i].abbreviation == stateName.name){
 					state = data[i];
+					rank = 50 - i;
 					break;
 				}
 			}
 
-			label.innerHTML = "<b>" + state.state + "</b><br>" + (state.y2016 * 100).toFixed(1) + "% uninsured";
+			legendName.innerHTML = state.state;
+			legendRate.innerHTML = (state.y2016 * 100).toFixed(1) + "%";
+			legendRank.innerHTML = "#" + rank;
 		});
 
 		//mouse has left
 		$("#uninsured-heat-map").on("usmapmouseout", function(event, data){
-			document.getElementById('uninsured-state-label').innerHTML = '<b>United States</b><br>10.4% uninsured';
+			var legend = document.getElementById('uninsured-state-legend');
+			var legendName = legend.getElementsByTagName('p')[0];
+			var legendRate = legend.getElementsByTagName('p')[2];
+			var legendRank = legend.getElementsByTagName('p')[4];
+
+			legendName.innerHTML = "United States";
+			legendRate.innerHTML = "9.0%";
+			legendRank.innerHTML = "#33 (OECD countries)";
 		});
 	});
 });
