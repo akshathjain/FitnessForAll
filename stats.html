@@ -44,6 +44,22 @@
 	.big-info-description{
 		font-size: 18px;
 	}
+	@media only screen and (max-width: 1100px){
+		.big-info-row{
+			width: 90%;
+		}
+		.big-info-row > .cell{
+			margin-bottom: 50px;
+			border-radius: 10px;
+			padding-bottom: 20px;
+		}
+		.big-info-row > .cell.orange{
+			background-color: #E2DAD5;
+		}
+		.big-info-row > .cell.red{
+			background-color: #EAC0C1;
+		}
+	}
 	</style>
 
 </head>
@@ -97,15 +113,15 @@
 		<h3>OBESITY</h3>
 		<br><br>
 		<div class="row big-info-row">
-			<div class="col-sm-4">
+			<div class="col-sm-4 cell orange">
 				<p class="big-info-number orange">36.5%</p>
 				<p class="big-info-description">of adults are obese in the US.</p>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-4 cell orange">
 				<p class="big-info-number orange">$147 bn</p>
 				<p class="big-info-description"> in total medical costs.</p>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-4 cell orange">
 				<p class="big-info-number orange">12<sup>th</sup></p>
 				<p class="big-info-description">most obese nation in the world.</p>
 			</div>
@@ -113,7 +129,7 @@
 
 		<h4><b>2016 Obesity Rates in the United States</b></h4>
 		<div class="row map-row">
-			<div class="col-sm-10">
+			<div class="col-sm-10" id="obesity-heat-map-container">
 				<div id="obesity-heat-map" style="width: 900px; height: 600px; margin: 40px auto;"></div>
 			</div>
 			<div class="col-sm-2">
@@ -128,19 +144,19 @@
 		<h3>HEART DISEASE</h3>
 		<br><br>
 		<div class="row big-info-row">
-			<div class="col-sm-3">
+			<div class="col-sm-3 cell red">
 				<p class="big-info-number red">#1</p>
 				<p class="big-info-description">cause of death in the US.</p>
 			</div>
-			<div class="col-sm-3">
+			<div class="col-sm-3 cell red">
 				<p class="big-info-number red">$320 bn</p>
 				<p class="big-info-description"> in total medical costs.</p>
 			</div>
-			<div class="col-sm-3">
+			<div class="col-sm-3 cell red">
 				<p class="big-info-number red">25%</p>
 				<p class="big-info-description">of all deaths in the US</p>
 			</div>
-			<div class="col-sm-3">
+			<div class="col-sm-3 cell red">
 				<p class="big-info-number red">735k</p>
 				<p class="big-info-description">heart attacks per year. That's one every 43 seconds.</p>
 			</div>
@@ -148,7 +164,7 @@
 
 		<h4><b>2016 Heart Disease Death Rates in the United States</b></h4>
 		<div class="row map-row">
-			<div class="col-sm-10">
+			<div class="col-sm-10" id="heartdisease-heat-map-container">
 				<div id="heartdisease-heat-map" style="width: 900px; height: 600px; margin: 40px auto;"></div>
 			</div>
 			<div class="col-sm-2">

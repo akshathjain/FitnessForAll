@@ -79,5 +79,12 @@ $(document).ready(function(){
 			document.getElementById('heartdisease-state-label').innerHTML = '<b>United States</b><br>165.5 deaths per 100,000';
 		});
 
+		//calculate map size once map loaded
+		calculateMapSize("heartdisease-heat-map-container", "heartdisease-heat-map");
+	});
+
+	//deal with screen size change
+	$(window).resize(function(){
+		calculateMapSize("heartdisease-heat-map-container", "heartdisease-heat-map");
 	});
 });

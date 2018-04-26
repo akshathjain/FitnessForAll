@@ -4,6 +4,11 @@ Date: 4/23/18
 Purpose: styles and heat map function for obesity map
 */
 
+
+function createHeatMap(mapID){
+
+}
+
 $(document).ready(function(){
 	var obesityData;
 
@@ -79,5 +84,22 @@ $(document).ready(function(){
 			document.getElementById('obesity-state-label').innerHTML = '<b>United States</b><br>36.5%';
 		});
 
+		//calculate map size once map loaded
+		calculateMapSize("obesity-heat-map-container", "obesity-heat-map");
+	});
+
+	//deal with screen size change
+	$(window).resize(function(){
+		calculateMapSize("obesity-heat-map-container", "obesity-heat-map");
 	});
 });
+
+function calculateMapSize(container, map){
+	var container = document.getElementById(container);
+	var map = document.getElementById(map);
+	var svg = map.getElementsByTagName("svg")[0];
+	map.style.width = container.offsetWidth + "px";
+	map.style.height = (container.offsetWidth * 6/9.0) + "px";
+	svg.style.width = container.offsetWidth + "px";
+	svg.style.height = (container.offsetWidth * 6/9.0) + "px";
+}
