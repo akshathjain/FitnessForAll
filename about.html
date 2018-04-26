@@ -34,15 +34,24 @@
 			padding-left: 20px;
 			padding-right: 100px;
 		}
-
 		.about-container{
 			margin-top: 30px;
 			margin-left: 400px;
 		}
-
 		.section{
 			padding-top: 100px;
 			padding-bottom: 100px;
+		}
+
+		@media only screen and (max-width: 750px){
+			.menu{
+				position: static;
+				margin-top: 110px;
+			}
+			.about-container{
+				width: 90%;
+				margin: 0 auto;
+			}
 		}
 	</style>
 
@@ -78,6 +87,7 @@
 			<ul><a href=#copyright>Copyright</a></ul>
 			<ul><a href="#artwork">Artwork</a></ul>
 			<ul><a href="#logo">Logo</a></ul>
+			<ul><a href="#workscited">Works Cited</a></ul>
 		</li>
 	</div>
 
@@ -105,7 +115,16 @@
 		<div class="container-fluid section" id="logo">
 			<h3>LOGO</h3>
 		</div>
+
+		<div class="container-fluid section" id="workscited">
+			<h3>WORKS CITED</h3>
+		</div>
 	</div>
 
+	<!-- footer -->
+	<footer class="container-fluid section-footer">
+
+		<p>©2018 Akshath Jain. All rights reserved. Designed and developed by Akshath Jain.</p>
+	</footer>
 </body>
 </html>
