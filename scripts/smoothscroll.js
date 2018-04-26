@@ -5,36 +5,6 @@ Purpose: FFA Website scripts
 */
 
 $(document).ready(function(){
-	var menuClicked = false;
-	checkPosition(menuClicked); //check the page position on init
-
-	//function to constantly check the scroll position
-	$(document).scroll(function(){
-		checkPosition(menuClicked);
-	});
-
-    //function to check to see if hamburger menu button clicked
-    document.getElementById("navbarCollapseButton").addEventListener("click", function(){
-    	menuClicked = !menuClicked;
-    	checkPosition(menuClicked);
-    });
-
-	//function that checks the page position and edits how the navbar looks based on where the user has scrolled
-	function checkPosition(menuStatus){
-		var position = $(this).scrollTop();
-		var list = document.getElementsByClassName("nav-link-id");
-		var spanList = document.getElementsByClassName("nav-span-id");
-		if(position == 0){
-			if(!menuStatus){
-				$(".navbar").removeClass("navbarStateWhenScrolled");
-			}else{
-				$(".navbar").addClass("navbarStateWhenScrolled");
-			}
-		}else{
-			$(".navbar").addClass("navbarStateWhenScrolled");
-		}
-	}
-
 	// Add smooth scrolling to all links
 	$("a:not([data-toggle])").on('click', function(event) {
 
