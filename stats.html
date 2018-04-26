@@ -47,6 +47,9 @@
 	.red{
 		color: #930002
 	}
+	.blue{
+		color: #035DA3;
+	}
 	.big-info-description{
 		font-size: 18px;
 	}
@@ -70,6 +73,9 @@
 		}
 		.big-info-row > .cell.red{
 			background-color: #EAC0C1;
+		}
+		.big-info-row > .cell.blue{
+			background-color: #D3ECFF;
 		}
 	}
 	</style>
@@ -121,6 +127,7 @@
 		</div>
 	</div>
 
+	<!-- obesity stats-->
 	<div class="container-fluid section-primary text-center" id="obesity">
 		<h3>OBESITY</h3>
 		<br><br>
@@ -152,6 +159,7 @@
 		</div>
 	</div>
 
+	<!-- heart disease stats -->
 	<div class="container-fluid section-secondary text-center" id="heartdisease">
 		<h3>HEART DISEASE</h3>
 		<br><br>
@@ -162,7 +170,7 @@
 			</div>
 			<div class="col-sm-3 cell red">
 				<p class="big-info-number red"><small>$</small>320<small>bn</small></p>
-				<p class="big-info-description"> in total medical costs.</p>
+				<p class="big-info-description">in total medical costs.</p>
 			</div>
 			<div class="col-sm-3 cell red">
 				<p class="big-info-number red">25<small>%</small></p>
@@ -187,9 +195,36 @@
 		</div>
 	</div>
 
+	<!-- health care stats -->
 	<div class="container-fluid section-primary text-center" id="exercise">
 		<h3>HEALTH CARE</h3>
-		
+		<br><br>
+		<div class="row big-info-row">
+			<div class="col-sm-4 cell blue">
+				<p class="big-info-number blue">40<small>%</small></p>
+				<p class="big-info-description">more likely to die without health insurance than with it.</p>
+			</div>
+			<div class="col-sm-4 cell blue">
+				<p class="big-info-number blue">28.2<small> mil.</small></p>
+				<p class="big-info-description">uninsured people in the US.</p>
+			</div>
+			<div class="col-sm-4 cell blue">
+				<p class="big-info-number blue"><small>$</small>3.3<small>tn</small></p>
+				<p class="big-info-description">spent on health care annually. That's $10,348 per person.</p>
+			</div>
+		</div>
+
+		<h4 class="map-label"><b>2016 Uninsured Rates in the United States</b></h4>
+		<div class="row map-row">
+			<div class="col-sm-9" id="uninsured-heat-map-container">
+				<div id="uninsured-heat-map" style="width: 900px; height: 600px; margin: 40px auto;"></div>
+			</div>
+			<div class="col-sm-3">
+				<div class="well">
+					<div id="uninsured-state-label"><b>United States</b><br>10.4% uninsured</div>	
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- footer -->

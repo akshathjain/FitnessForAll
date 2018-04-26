@@ -11,7 +11,6 @@ $(document).ready(function(){
 		$("#obesity-heat-map").usmap({
 			//define map styles
 			stateStyles:{
-				fill: "#1abc9c",
 				stroke:'#ffffff',
 				"stroke-width": 1
 			},
@@ -53,7 +52,6 @@ $(document).ready(function(){
 		$("#heartdisease-heat-map").usmap({
 			//define map styles
 			stateStyles:{
-				fill: "#1abc9c",
 				stroke:'#ffffff',
 				"stroke-width": 1
 			},
@@ -88,12 +86,54 @@ $(document).ready(function(){
 			document.getElementById('heartdisease-state-label').innerHTML = '<b>United States</b><br>165.5 deaths per 100,000';
 		});
 	});
+
+	//create uninsured heat map
+	createHeatMap("uninsured-heat-map", "uninsured-heat-map-container", "https://akshathjain.com/FitnessForAll/assets/uninsuredRates.json", 211, 236, 255, 3, 93, 163, .5, function(data, stateSpecificStyles){
+		//add styles to the map
+		$("#uninsured-heat-map").usmap({
+			//define map styles
+			stateStyles:{
+				stroke:'#ffffff',
+				"stroke-width": 1
+			},
+			//define hover styles
+			stateHoverStyles:{
+				stroke: "#002b4c",
+				"stroke-width":3
+			},
+			stateHoverAnimation: 100,
+			showLabels: false,
+			stateSpecificStyles:stateSpecificStyles
+		});
+
+		//define mouseover functionality
+		$("#uninsured-heat-map").on("usmapmouseover", function(event, stateName){
+			var label = document.getElementById('uninsured-state-label')
+			label.style.visibility = 'visible';
+
+			var state;
+			for(var i = 0; i < data.length; i++){
+				if(data[i].abbreviation == stateName.name){
+					state = data[i];
+					break;
+				}
+			}
+
+			label.innerHTML = "<b>" + state.state + "</b><br>" + (state.y2016 * 100).toFixed(1) + "% uninsured";
+		});
+
+		//mouse has left
+		$("#uninsured-heat-map").on("usmapmouseout", function(event, data){
+			document.getElementById('uninsured-state-label').innerHTML = '<b>United States</b><br>10.4% uninsured';
+		});
+	});
 });
 
 //deal with screen size change
 $(window).resize(function(){
 	calculateMapSize("obesity-heat-map-container", "obesity-heat-map");
 	calculateMapSize("heartdisease-heat-map-container", "heartdisease-heat-map");
+	calculateMapSize("uninsured-heat-map-container", "uninsured-heat-map");
 });
 
 function calculateMapSize(containerID, mapID){
