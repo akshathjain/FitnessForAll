@@ -94,6 +94,7 @@ body{
 	-webkit-transition: 0.1s;
 	user-select: none;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 .btn-custom:hover{
