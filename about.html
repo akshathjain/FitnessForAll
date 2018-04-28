@@ -16,44 +16,77 @@
 	<script src="scripts/smoothscroll.js"></script>
 
 	<style>
+	.menu{
+		position: fixed;
+		top: 130px;
+		left: 50px;
+		border-style: solid;
+		border-width: 0px 0px 0px 5px;
+		list-style-type: none;
+		border-color: #0592FF;
+		background-color: #EDF7FF;
+	}
+	.menu li{
+		padding-top: 20px;
+		padding-bottom: 15px;
+	}
+	.menu ul{
+		padding-left: 20px;
+		padding-right: 100px;
+	}
+	.about-container{
+		margin-top: 120px;
+		margin-left: 400px;
+	}
+	.section{
+		padding-top: 10px;
+		padding-bottom: 140px;
+		width: 60%;
+	}
+	.section-header{
+		padding-bottom: 15px;
+	}
+	.artwork-img-big{
+		width: 100%;
+		padding: 5px 0px 5px 0px;
+	}
+	.artwork-img-small{
+		width: 70%;
+		padding: 15px 0px 15px 0px;
+	}
+	@media only screen and (max-width: 750px){
 		.menu{
-			position: fixed;
-			top: 130px;
-			left: 50px;
-			border-style: solid;
-			border-width: 0px 0px 0px 5px;
-			list-style-type: none;
-			border-color: #0592FF;
-			background-color: #EDF7FF;
-		}
-		.menu li{
-			padding-top: 20px;
-			padding-bottom: 15px;
-		}
-		.menu ul{
-			padding-left: 20px;
-			padding-right: 100px;
+			position: static;
+			margin-top: 110px;
 		}
 		.about-container{
-			margin-top: 30px;
-			margin-left: 400px;
+			width: 90%;
+			margin: 0 auto;
 		}
 		.section{
-			padding-top: 100px;
-			padding-bottom: 100px;
+			width: 100%;
 		}
+		.center-mobile-only{
+			text-align: center
+		}			
+	}
 
-		@media only screen and (max-width: 750px){
-			.menu{
-				position: static;
-				margin-top: 110px;
-			}
-			.about-container{
-				width: 90%;
-				margin: 0 auto;
-			}
-		}
-	</style>
+	/*this is the image + name in the team section */
+	.image-group{
+		position: relative;
+	}
+	.image-group-label{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(255,255,255, 0.65); 
+		width: 100%; 
+		margin: 0; 
+		padding: 8px; 
+		color: #01345B;
+		font-weight: bold;
+	}
+</style>
 
 </head>
 <body>
@@ -84,40 +117,101 @@
 			<ul><a href="#projectparadigm">Project Paradigm</a></ul>
 			<ul><a href="#projectparadigm">Pillars of Health</a></ul>
 			<ul><a href=#team>Team</a></ul>
-			<ul><a href=#copyright>Copyright</a></ul>
-			<ul><a href="#artwork">Artwork</a></ul>
+			<ul><a href="#artworkcopyright">Artwork &amp; Copyright</a></ul>
 			<ul><a href="#logo">Logo</a></ul>
-			<ul><a href="#workscited">Works Cited</a></ul>
+			<ul><a href="#workscited">References</a></ul>
+			<ul><a href="#licenses">Open Source Licenses</a></ul>
 		</li>
 	</div>
 
 	<div class="about-container">
 		<div class="container-fluid section" id="projectparadigm">
-			<h3>PROJECT PARADIGM</h3>
+			<h3 class="section-header">PROJECT PARADIGM</h3>
+
+			<p>This website was entered into Project Paradigm’s: The Paradigm Challenge as a website entry. Fitness For All is a website that outlines a potential solution to the obesity epidemic in the United States while also increasing health insurance coverage. By using wearable fitness trackers to offer health insurance discounts based on an individual’s daily average steps (among other fitness heuristics), we hope to increase exercise, decrease obesity, and make health insurance more affordable for everyone. Check out our <a href="concept.html">Concept</a> and some <a href="stats.html">Statistics</a> for more information!</p>
 		</div>
 
 		<div class="container-fluid section" id="projectparadigm">
-			<h3>PILLARS OF HEALTH</h3>
+			<h3 class="section-header">PILLARS OF HEALTH</h3>
 		</div>
 
 		<div class="container-fluid section" id="team">
-			<h3>TEAM</h3>
+			<h3 class="section-header">TEAM</h3>
+
+			<div class="row">
+				<div class="col-sm-3" style="padding-bottom: 25px;">
+					<div class="image-group center-mobile-only">
+						<img src="images/akshathj.png" style="width: 100%">
+						<p class="image-group-label">Akshath J.</p>
+					</div>
+				</div>
+				<div class="col-sm-9">
+					<p><b>Founder, Fitness For All</b></p>
+					<p>Akshath is currently a senior at North Allegheny Senior High School. In the fall, he will be attending Carnegie Mellon University and will be majoring in Computer Science. In his free time, Akshath enjoys coding, running, and playing tennis.</p>
+				</div>
+			</div>
 		</div>
 
-		<div class="container-fluid section" id="copyright">
-			<h3>COPYRIGHT</h3>
-		</div>
+		<div class="container-fluid section" id="artworkcopyright">
+			<h3 class="section-header">ARTWORK &amp; COPYRIGHT</h3>
 
-		<div class="container-fluid section" id="artwork">
-			<h3>ARTWORK</h3>
+			<p>All artwork used in this website was either published in the public domain under the Creative Commons Zero license (free to use by everyone; no permission needed) and later edited using <a href="https://getpaint.net" target="_blank">Paint.NET</a> or created by us using <a href="https://inkscape.org/en/" target="_blank">Inkscape</a>.</p>
+
+			<br>
+
+			<p><b>Public Domain + Edited By Fitness For All</b></p>
+			<div class="row">
+				<div class="col-sm-4 center-mobile-only" >
+					<img src="images/background-home.jpg" class="artwork-img-big">
+				</div>
+				<div class="col-sm-4 center-mobile-only" >
+					<img src="images/background-concept.jpg" class="artwork-img-big">
+				</div>
+				<div class="col-sm-4 center-mobile-only" >
+					<img src="images/background-stats.jpg" class="artwork-img-big">
+				</div>
+			</div>
+
+			<br>
+			<br>
+
+			<p><b>Created by Fitness For All</b></p>
+			<div class="row">
+				<div class="col-sm-4 center-mobile-only">
+					<img class="artwork-img-small" src="images/graph.svg">
+				</div>
+				<div class="col-sm-4 center-mobile-only">
+					<img class="artwork-img-small" src="images/heartdisease.svg">
+				</div>
+				<div class="col-sm-4 center-mobile-only">
+					<img class="artwork-img-small" src="images/heartbeat.svg">
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-sm-4 center-mobile-only">
+					<img class="artwork-img-small" src="images/lightbulb.svg">
+				</div>
+				<div class="col-sm-4 center-mobile-only">
+					<img class="artwork-img-small" src="images/smartwatch.svg">
+				</div>
+				<div class="col-sm-4 center-mobile-only">
+					<img class="artwork-img-small" src="images/dollarsign.svg">
+				</div>
+			</div>
 		</div>
 
 		<div class="container-fluid section" id="logo">
-			<h3>LOGO</h3>
+			<h3 class="section-header">LOGO</h3>
 		</div>
 
 		<div class="container-fluid section" id="workscited">
-			<h3>WORKS CITED</h3>
+			<h3 class="section-header">REFERENCES</h3>
+		</div>
+
+		<div class="container-fluid section" id="workscited">
+			<h3 class="section-header">OPEN SOURCE LICENSES</h3>
 		</div>
 	</div>
 
