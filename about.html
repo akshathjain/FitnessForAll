@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Fitness For All — Stats</title>
-	<link rel="shortcut icon" type="image/png" href="images/logo.svg">
+	<link rel="shortcut icon" type="image/png" href="images/logo.png">
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -67,7 +67,9 @@
 			width: 100%;
 		}
 		.center-mobile-only{
-			text-align: center
+			text-align: center;
+			width: 100%;
+			margin: auto;
 		}			
 	}
 
@@ -85,8 +87,7 @@
 		padding: 8px; 
 		color: #01345B;
 		font-weight: bold;
-	}
-</style>
+	}</style>
 
 </head>
 <body>
@@ -99,7 +100,10 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="navbar-brand">FFA</a>
+				<a class="navbar-brand nav-link-id">
+					<img src="images/logo.svg" style="width: 45px; margin-top: -13px; margin-right: 20px;" align="left">
+					FFA
+				</a>
 			</div>
 			<div class="collapse navbar-collapse" id="mainNav">
 				<div class="nav navbar-nav navbar-right">
@@ -118,7 +122,7 @@
 			<ul><a href="#projectparadigm">Pillars of Health</a></ul>
 			<ul><a href=#team>Team</a></ul>
 			<ul><a href="#artworkcopyright">Artwork &amp; Copyright</a></ul>
-			<ul><a href="#logo">Logo</a></ul>
+			<ul><a href="#logo">Logo, Explained</a></ul>
 			<ul><a href="#workscited">References</a></ul>
 			<ul><a href="#licenses">Open Source Licenses</a></ul>
 		</li>
@@ -203,7 +207,22 @@
 		</div>
 
 		<div class="container-fluid section" id="logo">
-			<h3 class="section-header">LOGO</h3>
+			<h3 class="section-header">LOGO, EXPLAINED</h3>
+
+			<style type="text/css">
+			.logo-left{
+				margin-left: 0px;
+				width: 230px;
+				padding-bottom: 25px;
+			}
+			@media only screen and (max-width: 750px){
+				.logo-left{
+					margin-left: auto;
+				}
+			}</style>
+
+			<img src="images/logo.svg" class="logo-left img-scalable">
+			<p>The Fitness For All Logo is a symbolic representation of “Fitness For All” and is broken into two parts to do so. The first aspect of the logo, the letter F, represents Fitness. The second part of the logo, the ∀, is a mathematical symbol (most commonly used in discrete mathematics while writing proofs) that means “for all.” So when put together, the logo directly represents “Fitness For All.”</p>
 		</div>
 
 		<div class="container-fluid section" id="workscited">
