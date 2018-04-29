@@ -15,6 +15,10 @@ body{
 	margin: 0px;
 }
 
+.well{
+	background-color: #f2f2f2
+}
+
 .section-home-full{
 	background: url("../images/background-home.jpg");
 	background-size: cover;
@@ -63,7 +67,7 @@ body{
 }
 
 .section-secondary{
-	background-color: #f7f7f7;
+	background-color: #f6f6f6;
 	padding-top: 70px;
 	padding-bottom: 70px;
 }

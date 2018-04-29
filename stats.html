@@ -53,6 +53,9 @@
 	.big-info-number small{
 		font-size: 75%;
 	}
+	.purple{
+		color: #8600BA;
+	}
 	.orange{
 		color: #E55700
 	}
@@ -95,6 +98,9 @@
 			margin-bottom: 50px;
 			border-radius: 10px;
 			padding-bottom: 20px;
+		}
+		.big-info-row > .cell.purple{
+			background-color: #F6E0FF;
 		}
 		.big-info-row > .cell.orange{
 			background-color: #E2DAD5;
@@ -141,6 +147,10 @@
 			<h3><b>Statistics</b></h3>
 			<div class="nav-table">
 				<div class="nav-table-row">
+					<div class="nav-table-cell card" onclick="linkHash('#exercise');">
+						<h3>Exercise</h3>
+						<p>Exercise statistics.</p>
+					</div>
 					<div class="nav-table-cell card" onclick="linkHash('#obesity');">
 						<h3>Obesity</h3>
 						<p>Obesity statistics.</p>
@@ -151,15 +161,87 @@
 					</div>
 					<div class="nav-table-cell card" onclick="linkHash('#healthcare');">
 						<h3>Health Care</h3>
-						<p>Healthcare coverage.</p>
+						<p>Health insurance coverage.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
+	<!-- exercise stats-->
+	<div class="container-fluid section-primary text-center" id="exercise">
+		<h3>EXERCISE</h3>
+		<br><br>
+		<div class="row big-info-row">
+			<div class="col-sm-4 cell purple">
+				<p class="big-info-number purple">78.3<small>%</small></p>
+				<p class="big-info-description">of adults don't get sufficient exercise.</p>
+			</div>
+			<div class="col-sm-4 cell purple">
+				<p class="big-info-number purple"><small>$</small>117<small>bn</small></p>
+				<p class="big-info-description">in total medical costs.</p>
+			</div>
+			<div class="col-sm-4 cell purple">
+				<p class="big-info-number purple"><small>#</small>1</p>
+				<p class="big-info-description">cause of premature mortality.</p>
+			</div>
+		</div>
+
+		<h4 class="map-label"><b>2016 Physical Inactivity Rates in the United States</b></h4>
+		<div class="row map-row">
+			<div class="col-sm-9" id="physical-inactivity-heat-map-container">
+				<div id="physical-inactivity-heat-map" style="width: 900px; height: 600px; margin: 40px auto;"></div>
+			</div>
+			<div class="col-sm-3">
+				<div class="well map-legend" id="physical-inactivity-state-legend">
+					<p class="map-legend-title"><b>United States</b></p>
+					<p class="map-legend-subtitle">Physically Inactive</p>
+					<p>25.4%</p>
+					<p class="map-legend-subtitle">Rank</p>
+					<p>#46 (global)</p>
+				</div>
+
+				<br>
+
+				<div class="well map-legend">
+					<p class="map-legend-subtitle">Data Obtained From</p>
+					<p><a href="https://stateofobesity.org/physical-inactivity/" target="_blank">State of Obesity</a></p>
+
+					<a class="btn btn-custom btn-dark-text" href="assets/Physical_Inactivity_Rates.xlsx">DOWNLOAD DATA</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="paragraphs">
+			<p class="question">What is physical inactivity?</p>
+			<p class="answer">Physical inactivity constitutes not getting any exercise at all. So in the United States, 25.4% of the population is not getting any exercise per week (<a target="_blank" href="http://www.who.int/gho/ncd/risk_factors/physical_activity/en/">WHO</a>). Conversely, only 21.7% of the US population gets enough exercise every week (<a target="_blank" href="https://www.cdc.gov/nchs/fastats/exercise.htm">CDC</a>).</p>
+
+			<br>
+
+			<p class="question">What is the recommended amount of exercise?</p>
+			<p class="answer">The <a href="http://www.who.int/dietphysicalactivity/factsheet_adults/en/" target="_blank">World Health Organization</a> explains that individuals should get at least 150 minutes of moderate exercise or 75 minutes of high-intensity aerobic exercise per week.</p>
+
+			<br>
+
+			<p class="question">What are the effects of physical inactivity and insufficient exercise?</p>
+			<p class="answer">According to the <a href="http://www.who.int/dietphysicalactivity/factsheet_adults/en/" target="_blank">World Health Organization</a>, lack of exercise can lead to serious lifelong health impacts such as:
+				<ul>
+					<li>Death</li>
+					<li>Coronary heart disease</li>
+					<li>High blood pressure</li>
+					<li>Stroke</li>
+					<li>Obesity</li>
+					<li>Type 2 diabetes</li>
+					<li>Metabolic syndrome</li>
+					<li>Colon and breast cancer</li>
+					<li>Depression</li>
+				</ul>
+			</p>
+		</div>
+	</div>
+
 	<!-- obesity stats-->
-	<div class="container-fluid section-primary text-center" id="obesity">
+	<div class="container-fluid section-secondary text-center" id="obesity">
 		<h3>OBESITY</h3>
 		<br><br>
 		<div class="row big-info-row">
@@ -251,7 +333,7 @@
 	</div>
 
 	<!-- heart disease stats -->
-	<div class="container-fluid section-secondary text-center" id="heartdisease">
+	<div class="container-fluid section-primary text-center" id="heartdisease">
 		<h3>HEART DISEASE</h3>
 		<br><br>
 		<div class="row big-info-row">
@@ -344,7 +426,7 @@
 	</div>
 
 	<!-- health care stats -->
-	<div class="container-fluid section-primary text-center" id="healthcare">
+	<div class="container-fluid section-secondary text-center" id="healthcare">
 		<h3>HEALTH CARE</h3>
 		<br><br>
 		<div class="row big-info-row">

@@ -5,6 +5,59 @@ Purpose: styles and heat map function for obesity map
 */
 
 $(document).ready(function(){
+	//create physical inactivity heat map
+	createHeatMap("physical-inactivity-heat-map", "physical-inactivity-heat-map-container", "https://akshathjain.com/FitnessForAll/assets/physicalInactivityRates.json", 246, 224, 255, 134, 0, 186, 0.5, function(data, stateSpecificStyles){
+		//add styles to the map
+		$("#physical-inactivity-heat-map").usmap({
+			//define map styles
+			stateStyles:{
+				stroke:'#ffffff',
+				"stroke-width": 1
+			},
+			//define hover styles
+			stateHoverStyles:{
+				stroke: "#5e0084",
+				"stroke-width":3
+			},
+			stateHoverAnimation: 100,
+			showLabels: false,
+			stateSpecificStyles:stateSpecificStyles
+		});
+
+		//define mouseover functionality
+		$("#physical-inactivity-heat-map").on("usmapmouseover", function(event, stateName){
+			var legend = document.getElementById('physical-inactivity-state-legend');
+			var legendName = legend.getElementsByTagName('p')[0];
+			var legendPercent = legend.getElementsByTagName('p')[2];
+			var legendRank = legend.getElementsByTagName('p')[4];
+
+			var state, rank
+			for(var i = 0; i < data.length; i++){
+				if(data[i].abbreviation == stateName.name){
+					state = data[i];
+					rank = 50 - i;
+					break;
+				}
+			}
+
+			legendName.innerHTML = state.state;
+			legendPercent.innerHTML = (state.y2016 * 100).toFixed(1) + "%";
+			legendRank.innerHTML = "#" + rank;
+		});
+
+		//mouse has left
+		$("#physical-inactivity-heat-map").on("usmapmouseout", function(event, data){
+			var legend = document.getElementById('physical-inactivity-state-legend');
+			var legendName = legend.getElementsByTagName('p')[0];
+			var legendPercent = legend.getElementsByTagName('p')[2];
+			var legendRank = legend.getElementsByTagName('p')[4];
+
+			legendName.innerHTML = "United States";
+			legendPercent.innerHTML = "25.4%";
+			legendRank.innerHTML = "#46 (global)";
+		});
+	});
+
 	//create obesity heat map
 	createHeatMap("obesity-heat-map", "obesity-heat-map-container", "https://akshathjain.com/FitnessForAll/assets/obesityRates.json", 243, 212, 184, 211, 102, 0, 0.5, function(data, stateSpecificStyles){
 		//add styles to the map
@@ -167,6 +220,7 @@ $(document).ready(function(){
 
 //deal with screen size change
 $(window).resize(function(){
+	calculateMapSize("physical-inactivity-heat-map-container", "physical-inactivity-heat-map");
 	calculateMapSize("obesity-heat-map-container", "obesity-heat-map");
 	calculateMapSize("heartdisease-heat-map-container", "heartdisease-heat-map");
 	calculateMapSize("uninsured-heat-map-container", "uninsured-heat-map");
