@@ -6,7 +6,7 @@ Purpose: styles and heat map function for obesity map
 
 $(document).ready(function(){
 	//create physical inactivity heat map
-	createHeatMap("physical-inactivity-heat-map", "physical-inactivity-heat-map-container", "https://akshathjain.com/FitnessForAll/assets/physicalInactivityRates.json", 246, 224, 255, 134, 0, 186, 0.5, function(data, stateSpecificStyles){
+	createHeatMap("physical-inactivity-heat-map", "physical-inactivity-heat-map-container", "https://akshathjain.com/FitnessForAll/assets/physicalInactivityRates.json", 246, 224, 255, 157, 21, 211, 0.5, function(data, stateSpecificStyles){
 		//add styles to the map
 		$("#physical-inactivity-heat-map").usmap({
 			//define map styles
