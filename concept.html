@@ -40,7 +40,7 @@
 	}
 	@media only screen and (max-width: 1100px){
 		.info-container{
-			width: 90%;
+			width: 85%;
 		}
 	}
 	.faq{
@@ -49,16 +49,26 @@
 		margin: auto;
 		margin-top: 40px;
 	}
+	.faq h3{
+		font-weight: bold;
+		font-size: 14px;
+	}
+	.row-margin{
+		margin-bottom: 50px;
+	}
 	@media only screen and (max-width: 1100px){
 		.faq{
-			width: 95%;
+			width: 85%;
+		}
+		.row-margin{
+			margin-bottom: 0px;
 		}
 	}
 	.nav-tabs > li, .nav-pills > li {
 		float:none;
 		display:inline-block;
-		*display:inline; /* ie7 fix */
-		zoom:1; /* hasLayout ie7 trigger */
+		*display:inline; 
+		zoom:1;
 		margin-bottom: 20px;
 	}
 
@@ -109,8 +119,7 @@
 		font-size: 30px;
 		font-weight: bold;
 		margin: 0;
-	}
-</style>
+	}</style>
 
 </head>
 <body>
@@ -147,10 +156,10 @@
 				<div class="nav-table-row">
 					<div class="nav-table-cell card" onclick="linkHash('#overview');">
 						<h3>Overview</h3>
-						<p>A description of the solution.</p>
+						<p>Overview and feasibility of the solution.</p>
 					</div>					
-					<div class="nav-table-cell card" onclick="linkHash('#feasibilityfaq');">
-						<h3>Feasibility / FAQ</h3>
+					<div class="nav-table-cell card" onclick="linkHash('#faq');">
+						<h3>FAQ</h3>
 						<p>Could the proposed solution even work?</p>
 					</div>
 					<div class="nav-table-cell card" onclick="linkHash('#savingscalculator');">
@@ -191,7 +200,7 @@
 
 			<h3>Benefits to the Consumer</h3>
 			<p>
-				The Fitness For All model yields two primary benefits to the consumer:
+				The Fitness For All model yields three primary benefits to the consumer:
 				<ol>
 					<li>
 						Encourage physical fitness—All benefits of the FFA model are accessed through pursuing a healthier lifestyle. In fact, meeting the recommended fitness guidelines can help individuals avoid <a href="http://www.who.int/dietphysicalactivity/factsheet_adults/en/" target="_blank">conditions</a> such as:
@@ -207,7 +216,8 @@
 							<li>Depression</li>
 						</ul>
 					</li>
-					<li>Increase health insurance coverage—<a href="https://www.kff.org/uninsured/fact-sheet/key-facts-about-the-uninsured-population/" target="_blank">A Kaiser Family Foundation report</a> found that 45% of the 28.2 million uninsured Americans cite the high cost of healthcare as the number reason for not enrolling. By offering just a one percent discount, the FFA model could allow an additional 400,000 Americans to afford healthcare (<a href="https://books.google.com/books?id=nBOPpkGNodkC&pg=PA18444&lpg=PA18444&dq=%22one+percent+decrease+in+premiums%22&source=bl&ots=22fL87FLZU&sig=t0GnH_e5kKPXUnUxTEnpt4Ka8J4&hl=en&sa=X&ved=0ahUKEwjJhImC3dvaAhVFmVkKHZK3BEMQ6AEILzAB#v=onepage&q=%22one%20percent%20decrease%20in%20premiums%22&f=false" target="_blank">Lewin Group</a>)!</li>
+					<li>Decreased health insurance cost for an individual—Let’s say that a provider offers a $0.10 discount for every 1,000 steps a person walks. Everyday for a month, that person walks 10,000 steps. At the end of the month the person would save $30 (10,000 steps per day * 30 days / 1,000 steps * $0.10) on their bill!</li>
+					<li>Greater access to healthcare—<a href="https://www.kff.org/uninsured/fact-sheet/key-facts-about-the-uninsured-population/" target="_blank">A Kaiser Family Foundation report</a> found that 45% of the 28.2 million uninsured Americans cite the high cost of healthcare as the number reason for not enrolling. However, if these people sign up with a provider that uses the FFA model, then by utilizing the monthly exercise discounts, they may potentially be able to afford the insurance plans. In fact, studies have shown that in general, when costs decrease by just one percent, an additional 400,000 Americans are able to afford healthcare (<a href="https://books.google.com/books?id=nBOPpkGNodkC&pg=PA18444&lpg=PA18444&dq=%22one+percent+decrease+in+premiums%22&source=bl&ots=22fL87FLZU&sig=t0GnH_e5kKPXUnUxTEnpt4Ka8J4&hl=en&sa=X&ved=0ahUKEwjJhImC3dvaAhVFmVkKHZK3BEMQ6AEILzAB#v=onepage&q=%22one%20percent%20decrease%20in%20premiums%22&f=false" target="_blank">Lewin Group</a>)!</li>
 				</ol>
 				More statistics about exercise, obesity, heart disease, and healthcare can be found on the <a href="stats.html">Stats</a> page.
 			</p>
@@ -235,155 +245,62 @@
 				<br><br>
 				The model described by Fitness For All, however, is an opt-in program in which individuals decide whether or not they would like to receive discounts on health insurance costs. While P4P plans are focused on hospitals and doctors, the FFA model is focused solely on individuals. This model is much more sustainable since doctors and hospitals are in no way affected by how much or how little a person exercises—the quality of patient care is identical whether an individual walks 5,000 steps or 15,000 steps per day. The only difference between exercise levels is the magnitude of the health care discount an individual receives. 
 			</p>
+
+			<br><br><br><br>
+
+			<h3>What exactly is Fitness For All? Is it a company, model, or something else entirely?</h3>
+			<p>
+				Fitness For All, or FFA, is just a website to outline a potential solution to a problem: namely, the obesity epidemic. This website serves as a platform to disseminate information about the FFA model (healthcare discounts based on exercise) to anyone who’s interested. As of now, companies, if they’re willing, can implement the FFA model on a trial basis to see how it works.
+				<br><br>
+				Hopefully, if this idea gains traction, we may start development on tools to allow insurance companies to easily integrate the FFA model into their business plan. This will most likely include cross-platform smartphone apps (Android and iOS) that interface with fitness devices as well as developer tools and APIs to make integration seamless.
+			</p>
 		</div>
 	</div>
 
-	<div class="container-fluid section-secondary text-center" id="feasibilityfaq">
-		<h3>FEASIBILITY / FAQ</h3>
+	<div class="container-fluid section-secondary text-center" id="faq">
+		<h3>FAQ</h3>
 
 		<div class="faq">
-			<ul class="nav nav-pills">
-				<li class="active"><a data-toggle="pill" href="#section1">Section 1</a></li>
-				<li><a data-toggle="pill" href="#section2">Section 2</a></li>
-				<li><a data-toggle="pill" href="#section3">Section 3</a></li>
-			</ul>
-
-			<div class="tab-content">
-				
-				
-				<div id="section1" class="tab-pane fade in active">
-					<div class="row">
-						<div class="col-sm-4">
-							<h3>Q1</h3>
-							<p>Answer</p>
-						</div>
-						<div class="col-sm-4">
-							<h3>Q2</h3>
-							<p>Answer</p>
-						</div>
-						<div class="col-sm-4">
-							<h3>Q3</h3>
-							<p>Answer</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-4">
-							<h3>Q4</h3>
-							<p>Answer</p>
-						</div>
-						<div class="col-sm-4">
-							<h3>Q5</h3>
-							<p>Answer</p>
-						</div>
-						<div class="col-sm-4">
-							<h3>Q6</h3>
-							<p>Answer</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-4">
-							<h3>Q7</h3>
-							<p>Answer</p>
-						</div>
-						<div class="col-sm-4">
-							<h3>Q8</h3>
-							<p>Answer</p>
-						</div>
-						<div class="col-sm-4">
-							<h3>Q9</h3>
-							<p>Answer</p>
-						</div>
-					</div>
+			<div class="row row-margin">
+				<div class="col-sm-4">
+					<h3>How will my insurance provider know how much I walk?</h3>
+					<p>Your fitness device should be able to connect to a smartphone app via a bluetooth connection. This app will then allow you to view your stats and enable you to send your exercise data to your insurance provider so they can provide a discount.</p>
 				</div>
-				<div id="section2" class="tab-pane fade">
-					<div class="row">
-						<div class="col-sm-4">
-							<h3>Q1</h3>
-							<p>Answer</p>
-						</div>
-						<div class="col-sm-4">
-							<h3>Q2</h3>
-							<p>Answer</p>
-						</div>
-						<div class="col-sm-4">
-							<h3>Q3</h3>
-							<p>Answer</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-4">
-							<h3>Q4</h3>
-							<p>Answer</p>
-						</div>
-						<div class="col-sm-4">
-							<h3>Q5</h3>
-							<p>Answer</p>
-						</div>
-						<div class="col-sm-4">
-							<h3>Q6</h3>
-							<p>Answer</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-4">
-							<h3>Q7</h3>
-							<p>Answer</p>
-						</div>
-						<div class="col-sm-4">
-							<h3>Q8</h3>
-							<p>Answer</p>
-						</div>
-						<div class="col-sm-4">
-							<h3>Q9</h3>
-							<p>Answer</p>
-						</div>
-					</div>
+				<div class="col-sm-4">
+					<h3>How will my discount be calculated?</h3>
+					<p>Based on how many steps you take per month and how much of a discount your provider gives per 1,000 steps, your discount will be calculated. Check out our Calculator to see how much you could save!</p>
+					<a class="btn-custom btn-dark-text" href="#savingscalculator">CALCULATOR</a>
 				</div>
-				<div id="section3" class="tab-pane fade">
-					<div class="row">
-						<div class="col-sm-4">
-							<h3>Q1</h3>
-							<p>Answer</p>
-						</div>
-						<div class="col-sm-4">
-							<h3>Q2</h3>
-							<p>Answer</p>
-						</div>
-						<div class="col-sm-4">
-							<h3>Q3</h3>
-							<p>Answer</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-4">
-							<h3>Q4</h3>
-							<p>Answer</p>
-						</div>
-						<div class="col-sm-4">
-							<h3>Q5</h3>
-							<p>Answer</p>
-						</div>
-						<div class="col-sm-4">
-							<h3>Q6</h3>
-							<p>Answer</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-4">
-							<h3>Q7</h3>
-							<p>Answer</p>
-						</div>
-						<div class="col-sm-4">
-							<h3>Q8</h3>
-							<p>Answer</p>
-						</div>
-						<div class="col-sm-4">
-							<h3>Q9</h3>
-							<p>Answer</p>
-						</div>
-					</div>
+				<div class="col-sm-4">
+					<h3>What if I don’t walk that much?</h3>
+					<p>That’s completely okay! We encourage you to get as much exercise as you can, but if you have an extremely busy schedule and are unable to, there will be no negative consequences.</p>
 				</div>
 			</div>
+			<div class="row row-margin">
+				<div class="col-sm-4">
+					<h3>Do I need to buy my own fitness tracker?</h3>
+					<p>Ideally, no. But it all depends from company to company and how large each of their programs are. But don’t worry if you need to purchase it yourself—many wearable devices today are relatively inexpensive.</p>
+				</div>
+				<div class="col-sm-4">
+					<h3>Aren’t fitness wearables expensive?</h3>
+					<p>Some can definitely costs hundreds of dollars. However, the vast majority of trackers are relatively inexpensive and can be purchased for around $20. Ideally, however, your insurance company will provide you with a wearable device.</p>
+				</div>
+				<div class="col-sm-4">
+					<h3>Will only my step count be tracked?</h3>
+					<p>Daily/monthly step count is the easiest way to track your fitness levels. However, in the future, it is possible that companies can have opt-in programs where you can choose to share more data for even bigger discounts!</p>
+				</div>
+			</div>
+			<div class="row row-margin">
+				<div class="col-sm-4">
+					<h3>Will my data be sold?</h3>
+					<p>Absolutely not! You own your data. Your insurance provider is only accessing it to gauge how large your discount should be.</p>
+				</div>
+				<div class="col-sm-4">
+					<h3>What if I make a machine to “walk” for me?</h3>
+					<p>Trying to “game” the system is highly discouraged. Doing so will most likely result in you losing the ability to earn discounts at all. Additionally, by using advanced machine learning algorithms, companies will be able to verify that your steps are legitimate. </p>
+				</div>
+			</div>
+
 		</div>
 	</div>
 
