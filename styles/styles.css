@@ -99,6 +99,7 @@ body{
 	user-select: none;
 	text-decoration: none;
 	font-weight: bold;
+	white-space: pre-wrap;
 }
 
 .btn-custom:hover{
